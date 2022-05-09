@@ -99,10 +99,10 @@ class MLRequestSerializer(serializers.ModelSerializer):
         "created_date", "parent_mlalgorithm")
 ```
 10. Edit [apps/endpoints/views.py](https://github.com/pen1064/misty_dc_light/blob/main/apps/endpoints/views.py)
-There are three basic views in total (each one for each model):
-   1. EndpointsViewSet
-   2. MLAlgorithmViewSet
-   3. MLRequestViewSet (store the requests made)
+There are three basic views in total (each one for each model):\
+   10.1 EndpointsViewSet\
+   10.2 MLAlgorithmViewSet\
+   10.3 MLRequestViewSet (store the requests made)\
 The last one will be PredictView (for user to innput prediction, only POST) 
 
 11. Add the links to urls (server side)
