@@ -148,7 +148,14 @@ urlpatterns = [
             alg_code = inspect.getsource(XGBClassifier))
 ```
 16. Corss your finger hopes everything will workout!
-17. Start creating Dockerfile and docker-compose yaml 
+<img width="611" alt="image" src="https://user-images.githubusercontent.com/45325095/167357185-1c6feab1-7a48-450f-b919-dde7fa0f5fed.png">
+<img width="586" alt="image" src="https://user-images.githubusercontent.com/45325095/167356799-70317e81-59d1-4350-9716-27b9fd94a3a9.png">
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/45325095/167356842-1b21982b-94c0-4bd3-865e-97245883907e.png">
+<img width="630" alt="image" src="https://user-images.githubusercontent.com/45325095/167356940-d9fd4387-c9e7-4644-82ae-d5788591140e.png">
+
+17. Test it out with query, copy and past the query from [here](https://github.com/pen1064/misty_dc_light/blob/main/apps/endpoints/query.json)
+
+19. Start creating Dockerfile and docker-compose yaml 
 ```
 docker-compose build # build docker
 docker-compose up -d #to run
