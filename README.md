@@ -1,4 +1,4 @@
-# misty_dc_light
+# Deploying Single Model with Django (misty_dc_light)
 Lighter version of deploying ML model with Django and Docker, not so overkill :p\
 In here, only one model is allowed, u either create a new one or replace the old one (no saving the old models)!
 
