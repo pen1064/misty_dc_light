@@ -1,5 +1,6 @@
 # misty_dc_light
-Lighter version of deploying ML model with Django and Docker, not so overkill :p
+Lighter version of deploying ML model with Django and Docker, not so overkill :p\
+In here, only one model is allowed, u either create a new one or replace the old one (no saving the old models)!
 
 1. Create venv and install Django
 ```
