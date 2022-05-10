@@ -111,8 +111,11 @@ There are three basic views in total (each one for each model):\
    10.3 MLRequestViewSet (store the requests made)\
 The last one will be PredictView (for user to innput prediction, only POST) 
 
-11. Add the links to urls (server side)
+11. Create [apps/endpoints/urls.py](https://github.com/pen1064/misty_dc_light/blob/main/apps/endpoints/urls.py) Add the links to urls (server side)
 ```
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from .views import EndpointsViewSet, MLAlgorithmViewSet, MLRequestViewSet, PredictView
 router.register(r"endpoints", EndpointsViewSet, basename="endpoints")
 router.register(r"mlalgorithms", MLAlgorithmViewSet, basename="mlalgorithms")
 router.register(r"mlrequests", MLRequestViewSet, basename="mlrequests")
