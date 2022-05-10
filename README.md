@@ -44,7 +44,13 @@ apps.ml is where you put your model for different endpoints
   ROOT_URLCONF = 'misty_dc.urls' #make sure it's same as whatever project that you make 
   SECRET_KEY = 'django-insecure-' # delete just for security reason
 ```
-7. Edit apps/endpoints/models.py
+7. Edit apps/endpoints/apps.py, such that it knows the endpoints folder has moved into the apps folder
+```
+class EndpointsConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'apps.endpoints'
+```
+9. Edit apps/endpoints/models.py
 Since only one model is allowed, no longer tracking active status. 
 ```
 class Endpoints(models.Model):
