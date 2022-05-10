@@ -153,8 +153,11 @@ urlpatterns = [
   from apps.endpoints.urls import urlpatterns as endpoints_urlpatterns
   urlpatterns += endpoints_urlpatterns
 ```
-15. Use wsgi.py to add MLAlgorithm 
+15. Use [wsgi.py](https://github.com/pen1064/misty_dc_light/blob/main/misty_dc/wsgi.py) to add MLAlgorithm 
 ```
+    import inspect
+    from apps.ml.registry import MLRegistry
+    from apps.ml.xgb_model import XGBClassifier
     registry = MLRegistry()
     xgb = XGBClassifier()
     registry.add_algorithm(endpoint_name = 'classifier', alg_obj = xgb, alg_name = 'xgboost',
