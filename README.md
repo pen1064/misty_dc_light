@@ -127,8 +127,12 @@ urlpatterns = [
 ```
 12. Make a class for the ML moodel, and ofc test it!
 
-13. Make registry to add connect the ML to server side
+13. Make registry to add connect the ML to server side -> [apps/ml/registry.py](https://github.com/pen1064/misty_dc_light/blob/main/apps/ml/registry.py)
 ```
+  class MLRegistry:
+    def __init__(self):
+        self.endpoints={}
+          
     def add_algorithm(self, endpoint_name, alg_obj, alg_name, alg_status, alg_ver, alg_owner, alg_description, alg_code):
         endpoint, _ = Endpoints.objects.get_or_create(name=endpoint_name, owner=alg_owner)
 
