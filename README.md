@@ -144,7 +144,7 @@ urlpatterns = [
         self.endpoints = alg_obj
  ```
 14. Definitely put some test case to test your registry 
-12. Edit asgi.py 
+12. Double Check asgi.py 
 ```
   os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'misty_dc.settings')
 ```
