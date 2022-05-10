@@ -80,7 +80,7 @@ class MLRequest(models.Model):
 python3 manage.py makemigrations
 python3 manage.py migrate
 ```
-9. Add apps/endpoints/serializers.py
+9. Add [apps/endpoints/serializers.py](https://github.com/pen1064/misty_dc_light/blob/main/apps/endpoints/serializers.py)
 ```
 class EndpointsSerializer(serializers.ModelSerializer):
     class Meta:
